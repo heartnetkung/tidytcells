@@ -80,7 +80,7 @@ def standardize(
             return None
         return original_input
 
-    if not re.match(f"^C[A-Z]*[FW]$", seq):
+    if not re.match(f"^C[ARNDCQEGHILKMFPSTWYV]*[FW]$", seq):
         if strict:
             if not suppress_warnings:
                 warn(
